@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: green;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+}
+.listado-peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pelicula {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(4, 199, 199);
+    border-radius: 0.1px;
+    box-shadow:  3px3px4px-3px;
+}
+.pelicula{
+width: 25%;
+}
+button{
+    background-color: bisque;
+    color: blue;
+    padding: 0.4rem;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+button:hover{
+    background-color: cadetblue;
+}
+
+.verMas:hover{
+    background-color: brown;
+}
+.nuevoRegistro{
+    padding:0.5rem;
+    background-color: aliceblue;
+    border: none;
+    margin: 0.3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.tabla-pelicula{
+    border: 1px solid black;
+    margin: 0 auto;
+
+}
+
+
+.td-icono{
+    text-align: center;
+   
+}
+.formularioCreacion{
+    width:  90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding:  1rem;
+    background-color: bisque;
+}
+.campo-form{
+    display: flex;
+    justify-content: space-between;
+}
