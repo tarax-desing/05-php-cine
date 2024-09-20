@@ -16,6 +16,38 @@ h1{
     padding: 0.5rem;
     font-size: 2.5rem;
 }
+/*  */
+.tabla-peliculas {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .tabla-peliculas thead {
+    background-color: #3498db;
+    color: white;
+  }
+  .tabla-peliculas th,
+.tabla-peliculas td {
+  padding: 12px 15px;
+  text-align: center;
+}
+.tabla-peliculas tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .tabla-peliculas tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .tabla-peliculas tbody tr:last-of-type {
+    border-bottom: 2px solid #3498db;
+  }
+  .tabla-peliculas tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+  }
 .listado-peliculas{
     display: flex;
     flex-wrap: wrap;
@@ -51,11 +83,11 @@ button:hover{
 }
 .nuevoRegistro{
     padding:0.5rem;
-    background-color: aliceblue;
+    background-color: rgb(131, 197, 255);
     border: none;
     margin: 0.3rem;
     text-transform: uppercase;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -75,9 +107,65 @@ button:hover{
     max-width: 600px;
     margin: 0 auto;
     padding:  1rem;
-    background-color: bisque;
+    background-color: rgb(201, 111, 2);
 }
 .campo-form{
     display: flex;
     justify-content: space-between;
 }
+.sub-formulario{
+    text-align: center;
+
+}
+.box select {
+    background-color: cornsilk;
+    color: brown;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-transform: uppercase;
+}
+
+.box select:hover{
+    background-color: rgb(3, 54, 37);
+}
+/* ///// */
+
+
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background: #555;
+}
+

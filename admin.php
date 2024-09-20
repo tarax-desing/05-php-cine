@@ -20,9 +20,9 @@ $lista_peliculas = obtener_peliculas();
         </header>
         <main>
             <h1>Administración</h1>
-<div class="crear">
-    <button class="nuevoRegistro">registrar nueva película</button>
-</div>
+            <div class="crear">
+                <a href="crearPelicula.php"><button class="nuevoRegistro">registrar nueva película</button></a>
+            </div>
             <table class="tabla-peliculas">
                 <thead>
                     <th>ID</th>
@@ -35,12 +35,14 @@ $lista_peliculas = obtener_peliculas();
                 <?php
                 // echo mysqli_fetch_assoc($lista_peliculas);
                 while ($pelicula = mysqli_fetch_assoc($lista_peliculas)) { ?>
-                    <tr>
+                    <tr id="fila-<?php echo $pelicula['id']; ?>">
                         <td><?php echo $pelicula['id']; ?></td>
                         <td><?php echo $pelicula['titulo']; ?></td>
-                        <td class="precio"> <?php echo $pelicula['precio'] ?>€</td>
-                        <td class="td-icono"><button>🖋️</button></td>
-                        <td class="td-icono"><button>❌</button></td>
+                        <td class="precio"><?php echo $pelicula['precio'] ?>€</td>
+                        <td class="td-icono"><button class="btn-modificar"
+                                data-id="<?php echo $pelicula['id']; ?>">🖋️</button></td>
+                        <td class="td-icono"><button class="btn-eliminar"
+                                data-id="<?php echo $pelicula['id']; ?>">❌</button></td>
                     </tr>
                 <?php }
                 ?>
@@ -50,20 +52,8 @@ $lista_peliculas = obtener_peliculas();
         <footer>
 
         </footer>
-
-
-
-
-
-
-
-
-
-
-
-
+        <script src="js/admin.js"></script>
     </div>
-
 </body>
 
 </html>

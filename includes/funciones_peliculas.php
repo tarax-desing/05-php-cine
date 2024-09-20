@@ -11,7 +11,11 @@ $sql ="SELECT * FROM pelicula;";
   
 
 }
-function obtener_pelicula_por_id(){
+function obtener_pelicula_por_id($id){
+    require 'database.php';
+    $sql = 'SELECT * FROM pelicula WHERE id=$id;';
+    $resultado = mysqli_query($conexion,$sql);
+    return $resultado;
 
 }
 function crear_pelicula($titulo,$precio,$director){
@@ -21,9 +25,16 @@ require"database.php";
     $resultado = mysqli_query($conexion, $sql);
     return $resultado;
 }
-function modificar_pelicula(){
+function modificar_pelicula($id, $titulo,$precio,$director){
+    require "database.php";
+    $sql = "UPDATE pelicula SET titulo = '$titulo,precio = $precio, id_director =$director WHERE id = $id;" ;
+    $resultado = mysqli_query($conexion, $sql);
+    return $resultado;
 
 }
-function eliminar_pelicula(){
-    
+function eliminar_pelicula($id){
+    require"database.php";
+    $sql = "DELETE FROM PELICULA WHERE id=$id;";
+    $resultado = mysqli_query($conexion, $sql);
+    return $resultado;
 }
