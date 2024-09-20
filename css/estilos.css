@@ -81,3 +81,20 @@ button:hover{
     display: flex;
     justify-content: space-between;
 }
+.sub-formulario{
+    text-align: center;
+
+}
+.box select {
+    background-color: cornsilk;
+    color: brown;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-transform: uppercase;
+}
+
+.box select:hover{
+    background-color: aquamarine;
+}

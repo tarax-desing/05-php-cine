@@ -21,7 +21,7 @@ $lista_peliculas = obtener_peliculas();
         <main>
             <h1>Administración</h1>
 <div class="crear">
-    <button class="nuevoRegistro">registrar nueva película</button>
+   <a href="crearPelicula.php"><button class="nuevoRegistro">registrar nueva película</button></a>
 </div>
             <table class="tabla-peliculas">
                 <thead>

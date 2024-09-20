@@ -24,7 +24,7 @@ $lista_directores = obtener_directores();
                 <label for="precio">Precio:</label>
                 <input type="number" name="precio" required>
             </div>
-            <div class="campo-form">
+            <div class="box campo-form">
                 <select name="directores">
                     <option value="">Seleccione un director</option>
 
@@ -39,9 +39,9 @@ $lista_directores = obtener_directores();
 
 
             </div>
-            <div class="campo-form">
-
-                <input type="submit" value="Enviar datos">
+            <div class="sub-formulario">
+                <a class="nuevoRegistro" href="admin.php">Volver</a>
+                <input class="nuevoRegistro" type="submit" value="Enviar datos">
             </div>
         </form>
 
