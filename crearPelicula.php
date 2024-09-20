@@ -76,6 +76,9 @@ if (isset($_SESSION['metodo']) && $_SESSION['metodo'] === 'modificar') {
             <div class="sub-formulario">
                 <a class="nuevoRegistro" href="admin.php">Volver</a>
                 <input class="nuevoRegistro" type="submit" value="Enviar datos">
+            <div class="sub-formulario">
+                <a class="nuevoRegistro" href="admin.php">Volver</a>
+                <input class="nuevoRegistro" type="submit" value="Enviar datos">
             </div>
         </form>
         <?php
